@@ -95,20 +95,20 @@
 #     clock.left(30)
 
 
-import turtle
-turtle.Screen()
-sprite = turtle.Turtle()
-leg_number_of_sprite = int(input("what is the leg number of sprite:"))
-sprite.dot(50)
+# import turtle
+# turtle.Screen()
+# sprite = turtle.Turtle()
+# leg_number_of_sprite = int(input("what is the leg number of sprite:"))
+# sprite.dot(50)
 
-sprite.stamp()
-for i in range(leg_number_of_sprite):
-     sprite.forward(100)
-     sprite.stamp()
-     sprite.backward(100)
-     sprite.left(360/leg_number_of_sprite)
+# sprite.stamp()
+# for i in range(leg_number_of_sprite):
+#      sprite.forward(100)
+#      sprite.stamp()
+#      sprite.backward(100)
+#      sprite.left(360/leg_number_of_sprite)
 
 
-turtle.exitonclick()
+# turtle.exitonclick()
     
    

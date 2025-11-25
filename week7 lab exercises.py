@@ -1,4 +1,4 @@
-import turtle
+#import turtle
 # polygon = turtle.Turtle()
 # wn = turtle.Screen()
 # wn.bgcolor("gray")
