@@ -38,11 +38,19 @@
 # print(total)
 
 
-sentence = "hello world my name is Elif"
-total =0
-for word in sentence:
-    if sentence.isalpha():
-        total +=1
-    
-print(len(0))
-    
+
+
+# words = ["hello","world","my","name","is","Elif","and","his","name","is","Sam"]
+# sum = 0
+# for word in words:
+#     if word =="Sam":
+#         break
+#     sum += len(word)
+# print(sum)
+
+
+
+def replace_all(s,old,new):
+    return new.join(s.split(old))
+    return s.replace(old,new)
+print(replace_all("hello world","o","a"))

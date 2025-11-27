@@ -54,19 +54,21 @@
 # print(count)
 
 
-#def replace(s,old,new):
-    #return new.join(s.split(old))
-    #return s.replace(old,new)
-#print(replace("Mississippi","i","I"))
+def replace_word(s,old,new):
+    return new.join(s.split(old))
+    return s.replace(old,new)
+print(replace_word("Mississippi","i","I"))
 
 
 
-def maxValue(list):
-    max= list[0]
-    for number in list:
-        if number>max:
-            max = number
-    return max
-list =[1,2,3,4,5,6,7,8,9]
-print(maxValue(list))
+# def maxValue(list):
+#     max= list[0]
+#     for number in list:
+#         if number>max:
+#             max = number
+#     return max
+# list =[1,2,3,4,5,6,7,8,9]
+# print(maxValue(list))
+
+
 
