@@ -58,33 +58,33 @@
 
 
 
-# import turtle
-# wn = turtle.Screen()
-# s = turtle.Turtle()
-# s.pensize(3)
-# s.pencolor("pink")
-# wn.bgcolor("lightgreen")
-# def squares(t,side=20):
-#     for i in range(4):
-#         t.left(90)
-#         t.forward(side)
+import turtle
+wn = turtle.Screen()
+s = turtle.Turtle()
+s.pensize(3)
+s.pencolor("pink")
+wn.bgcolor("lightgreen")
+def squares(t,side=20):
+    for i in range(4):
+        t.left(90)
+        t.forward(side)
        
         
          
-# def growing_squares(t,length=20):
-#     for i in range(5):
+def growing_squares(t,length=20):
+    for i in range(5):
 
-#         squares(t,side=length)
+        squares(t,side=length)
 
-#         length +=20
+        length +=20
 
-#         t.penup()
-#         t.right(45)
-#         t.forward(15)
-#         t.left(45)
-#         t.pendown()
+        t.penup()
+        t.right(45)
+        t.forward(15)
+        t.left(45)
+        t.pendown()
         
 
 
-# growing_squares(s,20)
-# wn.exitonclick()
+growing_squares(s,20)
+wn.exitonclick()

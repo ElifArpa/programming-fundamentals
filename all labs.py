@@ -41,8 +41,8 @@
 # wn.exitonclick()
 
 #second lab exercises
-for i in range(100):
-     print("We like Python's turtles")
+#for i in range(100):
+#     print("We like Python's turtles")
 
 
 
@@ -50,7 +50,6 @@ for i in range(100):
 #     print("one of the months of the year is",months)
 
 # for numbers in [(12 , 144) , (10  ,  100) , (32 ,  1024) , (3 ,   9) , (66  ,  4356) , (17  ,  289) , (42  ,  1764) , (99  ,  9801) , (820  ,  400)]:
-
 #     print(numbers)
 
 # import turtle
@@ -59,7 +58,6 @@ for i in range(100):
 # for i in range(8):
 #     polygon.forward(100)
 #     polygon.left(360/8)
-
 # wn.exitonclick()
 
 
@@ -78,7 +76,6 @@ for i in range(100):
 #     polygon.forward(length)
 #     polygon.left(360/side)
 # polygon.end_fill()
-
 # wn.exitonclick()
 
 
@@ -117,7 +114,6 @@ for i in range(100):
 #     clock.penup()
 #     clock.backward(100)
 #     clock.left(360/12)
-
 # wn.exitonclick()
 
 
@@ -129,7 +125,79 @@ for i in range(100):
 #     spider.forward(100)
 #     spider.backward(100)
 #     spider.left(360/9)
-
 # wn.exitonclick()
 
+
+#third lab exercises
+# import random
+# for numbers in range(10):
+#     print(random.random())
+
+# import random
+# for numbers in range(10):
+#     print(random.randrange(25,35))
+
+# import math 
+# formula = math.hypot(5,12)
+# print(formula)
+
+# import math
+# def areaOfCircle(r):
+#     area = math.pi*(r**2)
+#     return area
+# print(areaOfCircle(9))
+
+
+# import turtle
+# star = turtle.Turtle()
+# wn = turtle.Screen()
+# def drawStar(t):
+#     for i in range(5):
+#         t.right(144)
+#         t.forward(100)
+# print(drawStar(star))
+# wn.exitonclick()        
+
+# import turtle
+# square = turtle.Turtle()
+# wn = turtle.Screen()
+# wn.bgcolor("lightgreen")
+# square.pencolor("pink")
+# square.pensize(3)
+# def drawsquare(t,side):
+#     for i in range(4):
+#         t.forward(side)
+#         t.left(90)
+    
+# for i in range(5):
+#     drawsquare(square,20)
+#     square.penup()
+#     square.forward(40)
+#     square.pendown()
+    
+# wn.exitonclick()
+
+import turtle
+square = turtle.Turtle()
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+square.pencolor("pink")
+square.pensize(3)
+def drawSquare(t,side):
+    for i in range(4):
+        t.left(90)
+        t.forward(side)
+
+def growingsquares(t,length):
+    for i in range(5):
+        drawSquare(t,side=length)
+        length += 20
+        t.penup()
+        t.right(45)
+        t.forward(15)
+        t.left(45)
+        t.pendown()
+        
+growingsquares(square,20)
+wn.exitonclick()
 
