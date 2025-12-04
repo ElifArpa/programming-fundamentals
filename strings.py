@@ -59,9 +59,11 @@
 # neo = "ELİFISSUCCESSFUL"
 # print(str.isupper(neo))
 
-# neo = {"My","name","is","Elif"}
-# sep = "&"
-# print(sep.join(neo))
+neo = {"","MynameisElif ",""} 
+sep = "&"
+
+ 
+print(sep.rjoin(neo))
 
 # neo = "My name Is ELİf"
 # print(str.lower(neo))
@@ -108,6 +110,6 @@
 # neo = "my name is elif"
 # print(str.zfill(neo,30))
 
-neo = "   my name is elif    "
-print(str.strip(neo))
+# neo = "   my name is elif    "
+# print(str.strip(neo))
 

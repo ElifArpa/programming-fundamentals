@@ -177,27 +177,395 @@
     
 # wn.exitonclick()
 
-import turtle
-square = turtle.Turtle()
-wn = turtle.Screen()
-wn.bgcolor("lightgreen")
-square.pencolor("pink")
-square.pensize(3)
-def drawSquare(t,side):
-    for i in range(4):
-        t.left(90)
-        t.forward(side)
+# import turtle
+# square = turtle.Turtle()
+# wn = turtle.Screen()
+# wn.bgcolor("lightgreen")
+# square.pencolor("pink")
+# square.pensize(3)
+# def drawSquare(t,side):
+#     for i in range(4):
+#         t.left(90)
+#         t.forward(side)
 
-def growingsquares(t,length):
-    for i in range(5):
-        drawSquare(t,side=length)
-        length += 20
-        t.penup()
-        t.right(45)
-        t.forward(15)
-        t.left(45)
-        t.pendown()
+# def growingsquares(t,length):
+#     for i in range(5):
+#         drawSquare(t,side=length)
+#         length += 20
+#         t.penup()
+#         t.right(45)
+#         t.forward(15)
+#         t.left(45)
+#         t.pendown()
         
-growingsquares(square,20)
-wn.exitonclick()
+# growingsquares(square,20)
+# wn.exitonclick()
 
+#fourth lab exercises
+# import turtle 
+# wn = turtle.Screen()
+# polygon = turtle.Turtle()
+# polygon.pencolor("pink")
+# wn.bgcolor("lightgreen")
+# polygon.pensize(3)
+# def drawPoly(t,side,length):
+#     for i in range(side):
+#         t.forward(length)
+#         t.left(360/side)
+# print(drawPoly(polygon,9,100))
+# wn.exitonclick()
+
+# import turtle
+# wn = turtle.Screen()
+# square = turtle.Turtle()
+# wn.bgcolor("lightgreen")
+# square.pencolor("blue")
+# def drawSquare(t,side,length):
+#     for i in range(side):
+#         t.forward(length)
+#         t.left(360/side)
+# def turningSquare(t,angle,num):
+#     for i in range(num):
+#         angle = 360/num
+#         drawSquare(square,4,100)
+#         t.left(angle)
+# print(turningSquare(square,18,20))
+# wn.exitonclick()
+
+# import turtle
+# wn = turtle.Screen()
+# square1 = turtle.Turtle()
+# square1.penup()
+# square1.goto(200,0)
+# square1.pendown()
+# square1.speed(0)
+# square2 = turtle.Turtle()
+# square2.penup()
+# square2.goto(-200,0)
+# square2.pendown()
+# square2.speed(0)
+# wn.bgcolor("lightgreen")
+# square1.pencolor("navyblue")
+# square2.pencolor("navyblue")
+# def drawSquare(t,side,length,angle):
+#     for i in range(side):
+#         t.forward(length*i)
+#         t.left(angle)
+
+# drawSquare(square1,100,2,90)
+# drawSquare(square2,100,2,91)
+# wn.exitonclick()
+
+# import turtle
+# wn = turtle.Screen()
+# triangle = turtle.Turtle()
+
+# def drawtriangle(t,side,length):
+#     for i in range(side):
+#         t.forward(length)
+#         t.left(360/side)
+# print(drawtriangle(triangle,3,100))
+# wn.exitonclick()
+
+# import turtle
+# wn = turtle.Screen()
+# star = turtle.Turtle()
+# star.pencolor("pink")
+# wn.bgcolor("lightgreen")
+# def drawStar(t,side,angle):
+#     for i in range(5):
+#         t.right(angle)
+#         t.forward(side)
+# def draw5Star(t,angle):
+#     for i in range(5):
+#         t.penup()
+#         t.right(angle)
+#         t.forward(350)
+#         t.pendown()
+#         drawStar(star,100,144)
+# print(draw5Star(star,144))
+# wn.exitonclick()
+
+# import turtle
+# wn = turtle.Screen()
+# sprite = turtle.Turtle()
+# def drawSprite(t,legnum,leglen):
+#     for i in range(legnum):
+#         t.stamp()
+#         t.forward(leglen)
+#         t.backward(leglen)
+#         t.left(360/legnum)
+# print(drawSprite(sprite,15,120))
+# wn.exitonclick()
+
+
+#fifth lab exercises
+# def sumTo(n):
+#     sum = (n*(n+1))/2
+#     return sum
+# print(sumTo(10))
+
+# import turtle
+# wn = turtle.Screen()
+# star = turtle.Turtle()
+# def drawStar(t,n,sidesize):
+#     for i in range(n):
+#         if n>=3 and n%2==1:
+#             t.right(180-(180/n))
+#             t.forward(sidesize)
+# print(drawStar(star,33,100))
+# wn.exitonclick()
+
+# def sumTo(n):
+#     sum = 0
+#     for count in range(n):
+#         sum = sum + n
+#     return sum 
+# print(sumTo(10))
+
+# def takenum(n):
+#         if n<0:
+#             return "n is negative"
+#         elif n>0:
+#             return "n is positive"
+#         else:
+#             return "n is zero"
+# print(takenum(-10))
+
+#sixth lab exercises
+# import random
+# def Choosenum(n):
+#     secretnum = random.randrange(1,10)
+#     while n != secretnum:
+
+#         if n > secretnum:
+#             print("too big")
+#         elif n < secretnum:
+#             print("too small")
+#         else:
+#             print("correct")
+# print(Choosenum(1))
+
+
+#seventh lab exercises
+# def is_odd(n):
+#     if n%2 == 1:
+#         return True
+#     else:
+#         return False
+# print(is_odd(2))
+
+# def LeapYear(year):
+#     leap = False
+#     if year//400:
+#         leap= True
+#     elif year//100:
+#         leap = False
+#     elif year//4:
+#         leap= True
+#     return leap
+# print(LeapYear(2000))
+
+#string exercises
+# def reverses(s):
+#     backward= ""
+#     for letter in s:
+#         backward = letter + backward
+#     return backward
+# print(reverses("hello"))
+
+# def palindrom(word):
+#     word2= ""
+#     for letter in word:
+#         word2 = letter + word2
+#         if word2 == word:
+#             return "word is palindrom"
+#         else:
+#             return "word is not palindrom"
+#     return word2
+# print(palindrom("hello"))
+
+
+# text = "this is an example"
+# print(text.count("example"))
+
+# text = "this is an example"
+# print(text.count("i"))
+
+# def firstnonRepeating(s):
+#     for char in s:
+#         if s.count(char)==1:
+#             return char
+
+#     return " "
+# print(firstnonRepeating("stress"))
+
+
+# def chooseAlpha(s):
+#     new = " "
+#     Alphalist=["q","w","e","r","t","y","u","i","o","p","a","s","d","f","g","h","j","k","l","z","x","c","v","b","n","m"]
+#     for char in s:
+#         if char in Alphalist:
+#             new = new + char
+#     return new
+# print(chooseAlpha("2elif1asd35"))
+
+# def compressString(s):
+#     if not s:
+#         return ""
+#     new = s[0]
+#     for i in range(1,len(s)):
+#         if s[i] != s[i-1]:
+#             new += s[i]
+#     return new
+# print(compressString("aabbccgddf"))
+
+
+# def countwords(words):
+#     total = 0
+#     for word in words:
+#         if word =="stop":
+#             break
+#         total = total + 1
+#     return total
+# print(countwords(["hello","world","my","stop","name","is","elif","stop","hi","exit"]))
+
+# myList = [10,"apple",3.14,True,10,5]
+# myList.append("banana")
+# myList.append(False)
+# myList.insert(1,"orange")
+# print(myList.count(10))
+# print(myList.pop(myList.index(10)))
+# print(myList)
+
+# def sumOfEvensSquares(nums):
+#     total = 0
+#     for number in nums:
+#         if number %2==0:
+#             total= total + number**2
+#     return total
+# print(sumOfEvensSquares([1,2,3,4,5]))
+
+# import random 
+# def guessNum(guess):
+#     n = random.randint(1,10)
+#     while guess!=n:
+#         if n > guess:
+#             print("too big")
+#         elif n<guess:
+#             print("too small")
+#     print("correct")
+# print(guessNum(5))
+
+# def examMark(note):
+#     if note >= 90:
+#         return "A"
+#     elif 90>note>=80:
+#         return "B"
+#     elif 80>note>=70:
+#         return "C"
+#     elif 70>note>=60:
+#         return "D"
+#     elif note<60:
+#         return "F"
+# print(examMark(87))
+
+# def findVowels(sentence):
+#     Vowels = ["e","u","i","o","a","u"]
+#     for vowel in sentence:
+#         if vowel in Vowels:
+#             print(vowel)
+# print(findVowels("Programming Fundamentals"))
+
+# def LeapYear(year):
+#     if year%400==0:
+#         return True
+#     elif year%100==0:
+#         return False
+#     elif year%4==0:
+#         return True
+#     else:
+#         return False
+# print(LeapYear(2000))
+# print(LeapYear(1900))
+
+# import turtle
+# wn = turtle.Screen()
+# polygon = turtle.Turtle()
+# def drawPolygon(t,sidenum,sidesize):
+#     for i in range(sidenum):
+#         t.forward(sidesize)
+#         t.left(360/sidenum)
+# print(drawPolygon(polygon,13,100))
+# wn.exitonclick()
+
+# def sumUntilEven(numlist):
+#     sum = 0
+#     numlist = [1,3,5,7,12]
+#     for number in numlist:
+#         if number%2==0:
+#             break
+#         sum = sum +number
+#     return sum
+# print(sumUntilEven([1,3,5,7,12]))
+
+# def averageevennumbers(numlist):
+#     tot=0
+#     cnt=0
+#     if len(list)<1:
+#         return 0
+#     for i in numlist:
+#         if i%2==0:
+#                 tot +=i
+#                 cnt +=1
+#     return tot/cnt
+# print(averageevennumbers([1,2,3,4,5,6,7]))
+
+# import math
+# def findhypot(side1,side2):
+#     formula = math.hypot(side1,side2)
+#     return formula
+# print(findhypot(3,4))
+
+# def wordslength(wordlist):
+#     total = 0
+#     for word in wordlist:
+#         if len(word)==5:
+#             total +=1
+#     return total
+# print(wordslength(["hello","world","my","name","is","apple"]))
+
+# def SumOfSquares(numlist):
+#     return sum(x**2 for x in numlist)
+# List = [1,2,3,4,5]
+# print(SumOfSquares(List))
+
+
+# def SumOfSquares(numList):
+#     squareList=0
+#     for num in numList:  
+#         squareList=squareList+num**2
+#     return squareList
+# print(SumOfSquares([1,2,3,4]))
+
+# def averageEvenNumbers(list):
+#     tot=0
+#     cnt=0
+#     if len(list) < 1:
+#         return 0
+#     for i in list:
+#         if i % 2 == 0:
+#             cnt+=1
+#             tot+=i
+#     return tot/cnt
+# print(averageEvenNumbers([1,2,3,4,5]))
+
+
+def coreword(text):
+    Alpha1 =["A","B","R","I","S"]
+    Alpha2= ["D","E","F","G","H"]
+    for letter in text:
+        if letter in text:
+            print(text.replace(text.index(letter),Alpha1,Alpha2))
+
+print(coreword("BARIS"))
