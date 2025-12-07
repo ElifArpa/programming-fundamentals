@@ -560,12 +560,40 @@
 #     return tot/cnt
 # print(averageEvenNumbers([1,2,3,4,5]))
 
+# sınavda yaptığın olabilir (son soru)
+# def coreword(text):
+#     Alpha1 =["A","B","R","I","S"]
+#     Alpha2= ["D","E","F","G","H"]
+#     for letter in text:
+#         if letter in text:
+#             print(text.replace(letter.index(),Alpha1,Alpha2))
 
-def coreword(text):
-    Alpha1 =["A","B","R","I","S"]
-    Alpha2= ["D","E","F","G","H"]
-    for letter in text:
-        if letter in text:
-            print(text.replace(text.index(letter),Alpha1,Alpha2))
+# print(coreword("BARIS"))
 
-print(coreword("BARIS"))
+import turtle
+wn = turtle.Screen()
+multi = turtle.Turtle()
+minus = turtle.Turtle()
+multi.penup()
+multi.goto(-100,100)
+multi.pendown()
+minus.penup()
+minus.goto(-100,-100)
+minus.pendown()
+def drawmulti(t,size):
+    for i in range(1):
+        t.left(53)
+        t.forward(140)
+        t.penup()
+        t.left(127)
+        t.forward(size)
+        t.left(143)
+        t.pendown()
+        t.forward(140)
+def drawminus(t,size):
+    for i in range(1):
+        t.forward(size)
+
+print(drawmulti(multi,100))
+print(drawminus(minus,100))
+wn.exitonclick()
