@@ -50,7 +50,7 @@
 
 
 
-def replace_all(s,old,new):
-    return new.join(s.split(old))
-    return s.replace(old,new)
-print(replace_all("hello world","o","a"))
+# def replace_all(s,old,new):
+#     return new.join(s.split(old))
+#     return s.replace(old,new)
+# print(replace_all("hello world","o","a"))

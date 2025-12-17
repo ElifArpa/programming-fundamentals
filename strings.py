@@ -59,11 +59,9 @@
 # neo = "ELİFISSUCCESSFUL"
 # print(str.isupper(neo))
 
-neo = {"","MynameisElif ",""} 
-sep = "&"
-
- 
-print(sep.rjoin(neo))
+# neo = {"","MynameisElif ",""} 
+# sep = "&"
+# print(sep.join(neo))
 
 # neo = "My name Is ELİf"
 # print(str.lower(neo))
@@ -104,8 +102,8 @@ print(sep.rjoin(neo))
 # neo = "my name is elif"
 # print(str.title(neo))
 
-# neo = "my name is elif"
-# print(str.upper(neo))
+#neo = "my name is elif"
+#print(str.upper(neo))
 
 # neo = "my name is elif"
 # print(str.zfill(neo,30))
@@ -113,3 +111,43 @@ print(sep.rjoin(neo))
 # neo = "   my name is elif    "
 # print(str.strip(neo))
 
+#EXERCİSES
+
+# def reverseword(word):
+#     word = word.upper()
+#     backwards = ""
+#     for letter in word:
+#         backwards = letter+backwards
+#     return backwards
+# print(reverseword("python"))
+
+# sentence = str(input("please write a sentence:"))
+# def findVowels():
+#     Vowels =["e","u","o","a","i","A","E","U","I","O"]
+#     total = 0
+#     for letter in sentence:
+#         if letter in Vowels:
+#             total= total + 1
+#     return total
+# print(findVowels())
+
+# word = str(input("please enter a word:"))
+# def isPalindrome():
+#     backward= ""
+#     for letter in word:
+#         backward= letter+backward
+#     if backward == word:
+#             return "word is palindrome"
+#     else:
+#             return "word is not palindrome"
+#     return backward
+# print(isPalindrome())
+
+# alist=[14,25,30,7,42,19,50,11]
+# def isEven(alist):
+#     blist=[]
+#     for numbers in alist:
+#         if numbers%2==0:
+#             blist.append(numbers)
+#     return blist
+# print(isEven([14,25,30,7,42,19,50,11]))

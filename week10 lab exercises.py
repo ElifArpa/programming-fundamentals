@@ -7,17 +7,17 @@
 
 
 
-def takeYears(year):
-    if year%400==0:
-        return "year is a Leap Year"
-    elif year%100==0:
-        return "year is NOT a Leap Year"
-    elif year%4==0:
-        return "year is a Leap Year"
-    else:
-        return "year is NOT a Leap Year"
+# def takeYears(year):
+#     if year%400==0:
+#         return "year is a Leap Year"
+#     elif year%100==0:
+#         return "year is NOT a Leap Year"
+#     elif year%4==0:
+#         return "year is a Leap Year"
+#     else:
+#         return "year is NOT a Leap Year"
     
-print(takeYears(1900))
+# print(takeYears(1900))
 
 
 

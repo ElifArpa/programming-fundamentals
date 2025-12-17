@@ -570,30 +570,31 @@
 
 # print(coreword("BARIS"))
 
-import turtle
-wn = turtle.Screen()
-multi = turtle.Turtle()
-minus = turtle.Turtle()
-multi.penup()
-multi.goto(-100,100)
-multi.pendown()
-minus.penup()
-minus.goto(-100,-100)
-minus.pendown()
-def drawmulti(t,size):
-    for i in range(1):
-        t.left(53)
-        t.forward(140)
-        t.penup()
-        t.left(127)
-        t.forward(size)
-        t.left(143)
-        t.pendown()
-        t.forward(140)
-def drawminus(t,size):
-    for i in range(1):
-        t.forward(size)
+# import turtle
+# wn = turtle.Screen()
+# multi = turtle.Turtle()
+# minus = turtle.Turtle()
+# multi.penup()
+# multi.goto(-100,100)
+# multi.pendown()
+# minus.penup()
+# minus.goto(-100,-100)
+# minus.pendown()
+# def drawmulti(t,size):
+#     for i in range(1):
+#         t.left(53)
+#         t.forward(140)
+#         t.penup()
+#         t.left(127)
+#         t.forward(size)
+#         t.left(143)
+#         t.pendown()
+#         t.forward(140)
+# def drawminus(t,size):
+#     for i in range(1):
+#         t.forward(size)
 
-print(drawmulti(multi,100))
-print(drawminus(minus,100))
-wn.exitonclick()
+# print(drawmulti(multi,100))
+# print(drawminus(minus,100))
+# wn.exitonclick()
+

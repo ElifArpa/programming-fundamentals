@@ -98,12 +98,14 @@
 #print(setA.union(setB))
 #print(setA.difference(setB))
 
-setC = {"bird","dog","cat","horse","fish","dog"}
+# setC = {"bird","dog","cat","horse","fish","dog"}
 # setC.remove("bird")
 # setC.remove("black")  #key error
-setC.discard("black")
+# setC.discard("black")
+# print(setC)
 
-print(setC)
+
+
 
 
 
