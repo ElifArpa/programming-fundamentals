@@ -57,21 +57,33 @@
 #             dino.goto(x,y)
 # wn.exitonclick()
 
-def savenumbers(filename):
-    numbers = []
-    for i in range(5):
-        number = int(input("enter a number:"))
-        numbers.append(number)
-    with open(filename,"w") as file:
-        for num in numbers:
-            file.write(str(num) + "\n")
+# def savenumbers(filename):
+#     numbers = []
+#     for i in range(5):
+#         number = int(input("enter a number:"))
+#         numbers.append(number)
+#     with open(filename,"w") as file:
+#         for num in numbers:
+#             file.write(str(num) + "\n")
 
-def read_and_sum(filename):
-    total = 0
-    with open(filename,"r") as file:
-        for line in file:
-            total += int(line)
-        return total
-savenumbers("numbers.txt")
-result = read_and_sum("numbers.txt")
-print("Sum:",result)
+# def read_and_sum(filename):
+#     total = 0
+#     with open(filename,"r") as file:
+#         for line in file:
+#             total += int(line)
+#         return total
+# savenumbers("numbers.txt")
+# result = read_and_sum("numbers.txt")
+# print("Sum:",result)
+
+
+def countpython(filename):
+    count=0
+    with open("text.txt","r") as file:
+        for line in filename:
+            items = line.strip()
+            if items in filename:
+                count +=1
+        return count  
+print(countpython("text.txt"))    
+

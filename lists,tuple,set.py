@@ -69,11 +69,11 @@
 # print(blist)
 
 
-# atuple =("Jack",[35,1.87])
-# (Name, Age, Height) = atuple
-# print(Name)
-# print(Age)
-# print(Height)
+atuple =("Jack",35,1.87)
+(Name, Age, Height) = atuple
+print("Name:",Name)
+print("Age:",Age)
+print("Height:",Height)
 # btuple =("Mary",33,1.79)
 # ctuple = (atuple + btuple)
 # alist = list(atuple)
