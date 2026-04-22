@@ -54,10 +54,10 @@
 # print(count)
 
 
-def replace_word(s,old,new):
-    return new.join(s.split(old))
-    return s.replace(old,new)
-print(replace_word("Mississippi","i","I"))
+# def replace_word(s,old,new):
+#     return new.join(s.split(old))
+#     return s.replace(old,new)
+# print(replace_word("Mississippi","i","I"))
 
 
 

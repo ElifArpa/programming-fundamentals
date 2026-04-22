@@ -77,13 +77,25 @@
 # print("Sum:",result)
 
 
-def countpython(filename):
-    count=0
-    with open("text.txt","r") as file:
-        for line in filename:
-            items = line.strip()
-            if items in filename:
-                count +=1
-        return count  
-print(countpython("text.txt"))    
+#yanlış çalışıyor
+# def countpython(filename):
+#     count=0
+#     with open("text.txt","r") as file:
+#         for line in filename:
+#             items = line.strip()
+#             if items in filename:
+#                 count +=1
+#         return count  
+# print(countpython("text.txt"))    
+
+
+def readnames(filename):
+    with open("students.txt","r") as file:
+        return file.read().splitlines()
+def sortList(students):
+    students.sort()
+    return students
+
+    
+
 
